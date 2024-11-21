@@ -1,4 +1,4 @@
-print("Learning Git!")
+print("Learning Git")
 
 lista_zakupow = {
     "piekarnia": ["chleb","bulki","paczki"],
