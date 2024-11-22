@@ -14,6 +14,7 @@ for key, value in lista_zakupow.items():
     
 print(f"W sumie kupuje {count} produktow.")
 
+print("Test_Branch")
 
 """
 Zdefiniuj słownik zawierający listę zakupów, gdzie kluczem jest nazwa sklepu, a wartością lista przedmiotów, które chcesz kupić w danym sklepie.
