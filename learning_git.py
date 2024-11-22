@@ -15,6 +15,7 @@ for key, value in lista_zakupow.items():
 print(f"W sumie kupuje {count} produktow.")
 
 
+print("To byl test branch!")
 """
 Zdefiniuj słownik zawierający listę zakupów, gdzie kluczem jest nazwa sklepu, a wartością lista przedmiotów, które chcesz kupić w danym sklepie.
 Następnie za pomocą pętli for, przeiteruj po tym słowniku i wyświetl napis w postaci: Idę do <nazwa sklepu> i kupuję tam <lista produktów>.
