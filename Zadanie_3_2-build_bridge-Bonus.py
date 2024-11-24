@@ -11,7 +11,7 @@ def build_bridge(chunk, goal):
     else:
         return False
 
-# Przykład interakcji z użytkownikiem
+# Interaction with the user
 goal = int(input("Please enter the length of the bridge: "))
 chunk = int(input("Please enter the length of the chunk: "))
 

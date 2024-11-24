@@ -52,6 +52,7 @@ for i, model in enumerate(models):
 max_sales_2017 = 0
 max_sales_2018 = 0
 sales_2016_2017_2018 = 10000000000
+answer_3 = []
 
 for manufacturer in cars:
     for model in cars[manufacturer]:
@@ -71,7 +72,7 @@ for manufacturer in cars:
                 
         # Find the model with no data for 2016 and was sold in 2017 (Answer 3)
         if cars[manufacturer][model]['sales']['2016'] == 'NA' and cars[manufacturer][model]['sales']['2017'] != 'NA':
-            print(f"{manufacturer} {model} has no data for 2016 and was sold in 2017") 
+            answer_3.append(f"{manufacturer} {model} has no data for 2016 and was sold in 2017") 
         
         # Calculate sales for 2016, 2017 and 2018 (Answer 4)
         if cars[manufacturer][model]['sales']['2016'] != 'NA':
@@ -105,7 +106,10 @@ for model in cars['Ford']:
 increase_sales_ford = int((sales_2018_ford - sales_2017_ford) / sales_2017_ford * 100)
 answer5 = increase_sales_ford
 
-print(f"The biggest sales in 2018 had {answer2_1} with it's model {answer2_2}") 
-print(f"The biggest sales in 2017 had {answer1_1} with it's model {answer1_2}")     
-print(f"The manufacturer with the lowest sales in 2016, 2017 and 2018 is {answer4_1} with model {answer4_2}")
-print(f"Increase of Ford sales between 2017 and 2018 is {answer5}%")
+print(f"Answer 1: The biggest sales in 2017 had {answer1_1} with it's model {answer1_2}")   
+print(f"Answer 2: The biggest sales in 2018 had {answer2_1} with it's model {answer2_2}")
+print("Answer 3:") 
+for item in answer_3:
+    print(f"          {item}")
+print(f"Answer 4: The manufacturer with the lowest sales in 2016, 2017 and 2018 is {answer4_1} with model {answer4_2}")
+print(f"Answer 5: Increase of Ford sales between 2017 and 2018 is {answer5}%")

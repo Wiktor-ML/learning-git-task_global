@@ -25,5 +25,3 @@ for i, number in enumerate(random_numbers_1):
 
 print(set_of_throws)
 
-#for key, value in num_dict.items():
-#    print(f"({key}, {value})")
